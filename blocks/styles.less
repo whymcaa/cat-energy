@@ -1,0 +1,75 @@
+@font-face {
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 400;
+    src: url("/fonts/Oswald-Regular.ttf");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 500;
+    src: url("/fonts/Oswald-Medium.ttf");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 400;
+    src: url("/fonts/ofont.ru_Arial.ttf");
+    font-display: swap;
+}
+
+@import url("mixins.less");
+@import url("vars.less");
+@import url("header.less");
+@import url("index-hero.less");
+@import url("index-services.less");
+@import url("index-about.less");
+@import url("index-example.less");
+@import url("contact.less");
+@import url("footer.less");
+@import url("form-header.less");
+@import url("form-options.less");
+@import url("form__contact.less");
+@import url("main-products.less");
+@import url("additional-products.less");
+@import url("free-gift.less");
+
+html {
+    height: 100vh;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    font-family: "Arial", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    color: @text-primary;
+
+    @media (min-width: @tablet-width) {
+        font-size: 16px;
+        line-height: 24px;
+    }
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+a {
+    text-decoration: none;
+}

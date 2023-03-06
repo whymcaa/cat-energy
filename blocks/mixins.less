@@ -1,0 +1,231 @@
+// main: styles.less
+
+.wrapper () {
+    width: 280px;
+    margin: 0 auto;
+
+    @media (min-width: @tablet-width) {
+        width: 708px;
+    }
+
+    @media (min-width: @desk-width) {
+        width: 1220px;
+    }
+}
+
+.list-style () {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.title-style () {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 36px;
+
+    @media (min-width: @tablet-width) {
+        font-size: 60px;
+        line-height: 60px;
+    }
+}
+
+.button-style () {
+    background-color: @primary-bg;
+    width: 280px;
+    height: 40px;
+    color: white;
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 14px;
+    line-height: 18px;
+    cursor: pointer;
+    margin: 0;
+    box-sizing: border-box;
+    display: block;
+    border: none;
+
+    &:hover {
+        background-color: #5EAA2F;
+    }
+
+    &:active {
+        background-color: #5EAA2F;
+        color: rgba(255, 255, 255, 0.3);
+    }
+
+    @media (min-width: @tablet-width) {
+        width: 244px;
+        height: 54px;
+        font-size: 20px;
+        line-height: 20px;
+    }
+
+}
+
+.label-style () {
+    font-family: 'Oswald';
+    font-weight: 400;
+    color: @text-primary;
+    text-transform: uppercase;
+    font-size: 16px;
+    line-height: 18px;
+
+    @media (min-width: @tablet-width) {
+        font-size: 20px;
+        line-height: 30px;
+    }
+}
+
+.label-flex () {
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+
+.input-style () {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 13px 0 14px 14px;
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    font-weight: 400;
+    color: @text-primary;
+    font-size: 16px;
+    line-height: 18px;
+    border: 1px solid #E7E7E7;
+    height: 45px;
+
+    &::placeholder {
+        color: @text-primary;
+    }
+
+    &:hover {
+        border: 1px solid #CDCDCD;
+    }
+
+    &:active {
+        border: 2px solid @text-primary;
+    }
+
+    &:active + svg path {
+        fill: @primary-bg;
+    }
+
+    &:invalid {
+        border: 2px solid #FF8282;
+    }
+
+    &:invalid + svg path {
+        fill: #FF8282;
+    }
+
+    &:focus {
+        outline: none;
+        border: 2px solid @text-primary;
+    }
+
+    &:focus + svg path {
+        fill: @primary-bg;
+    }
+
+    @media (min-width: @tablet-width) {
+        font-size: 20px;
+        line-height: 30px;
+        padding: 11px 0 11px 18px;
+        max-width: 567px;
+        height: 52px;
+    }
+
+    @media (min-width: @desk-width) {
+        max-width: 506px;
+        padding: 11px 0 11px 20px;
+    }
+}
+
+.form-decoration () {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    width: 320px;
+    height: 1px;
+    background-color: #D9D9D9;
+    left: -20px;
+}
+
+.legend-style () {
+    font-family: 'Oswald', sans-serif;
+    font-size: 24px;
+    line-height: 26px;
+    color: black;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 35px;
+    position: relative;
+
+    @media (min-width: @tablet-width) {
+        font-size: 36px;
+        line-height: 36px;
+        margin-bottom: 76px;
+    }
+}
+
+.form__green-line () {
+    position: absolute;
+    content: "";
+    height: 2px;
+    width: 99px;
+    background-color: @primary-bg;
+    right: -20px;
+
+    @media (min-width: @tablet-width) {
+        right: -30px;
+    }
+
+    @media (min-width: @desk-width) {
+        right: -112px;
+    }
+}
+
+.additional__item-decoration () {
+    position: absolute;
+    bottom: 0;
+    width: 280px;
+    height: 1px;
+    background-color: #CDCDCD;
+    left: 0;
+    content: "";
+
+    @media (min-width: @tablet-width) {
+        width: 708px;
+        left: -38px;
+    }
+
+    @media (min-width: @desk-width) {
+        width: 894px;
+        left: 0;
+    }
+}
+
+.about-item__number {
+    display: none;
+
+    @media (min-width: @tablet-width) {
+        content: "1";
+        position: absolute;
+        font-family: 'Oswald', sans-serif;
+        font-size: 280px;
+        line-height: 280px;
+        color: #F2F2F2;
+        top: 0;
+        right: 0;
+        z-index: -1;
+        display: block;
+    }
+
+    @media (min-width: @desk-width) {
+        top: -40px;
+    }
+}

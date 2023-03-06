@@ -1,0 +1,135 @@
+// main: styles.less
+
+.index-hero {
+    margin-bottom: 20px;
+    background-image: url("/images/index-hero-bg.png");
+    background-repeat: no-repeat;
+    background-position: top center;
+
+    @media (min-width: @tablet-width) {
+        background: none;
+        margin-bottom: 536px;
+        position: relative;
+    }
+
+    @media (min-width: @desk-width) {
+        margin-bottom: 267px;
+        position: relative;
+    }
+}
+
+.index-hero::before {
+    @media (min-width: @desk-width) {
+        content: "";
+        position: absolute;
+        top: -223px;
+        right: 0;
+        width: 720px;
+        height: 694px;
+        background-image: url("/images/index-hero-bg-desk.png");
+        z-index: -1;
+    }
+}
+
+.index-hero__wrapper {
+    .wrapper ();
+    padding-top: 27px;
+    padding-left: 36px;
+    padding-right: 35px;
+
+    @media (min-width: @tablet-width) {
+        padding: 0;
+    }
+}
+
+.title {
+    .title-style ();
+}
+
+.index-hero__title {
+    margin: 0;
+    text-align: center;
+    color: white;
+    margin-bottom: 25px;
+
+    @media (min-width: @tablet-width) {
+        color: black;
+        padding-left: 87px;
+        width: 414px;
+        text-align: left;
+        margin-bottom: 41px;
+    }  
+    
+    @media (min-width: @desk-width) {
+        padding-left: 80px;
+        margin-bottom: 40px;
+    }
+}
+
+.index-hero__description {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    font-size: 14px;
+    line-height: 14px;
+    color: white;
+    font-weight: 400;
+    margin-bottom: 29px;
+
+    @media (min-width: @tablet-width) {
+        color: black;
+        font-size: 20px;
+        line-height: 20px;
+        text-align: left;
+        padding-left: 87px;
+        margin-bottom: 49px;
+    }
+
+    @media (min-width: @desk-width) {
+        padding-left: 80px;
+        margin-bottom: 52px;
+    }
+}
+
+.index-hero__image {
+    width: 280px;
+    height: 270px;
+    display: block;
+    margin-bottom: 3px;
+    object-fit: contain;
+    background-color: transparent;
+
+    @media (min-width: @tablet-width) {
+        position: absolute;
+        z-index: -1;
+        width: 709px;
+        height: 609px;
+        top: 211px;
+    }
+
+    @media (min-width: @desk-width) {
+        width: 552px;
+        height: 499px;
+        top: -72px;
+        right: 330px;
+    }
+}
+
+.button {
+    .button-style ();
+}
+
+.index-hero__link {
+    padding: 10px 73px;
+
+    @media (min-width: @tablet-width) {
+        padding: 15px 26px;
+        margin-left: 87px;
+    }
+
+    @media (min-width: @desk-width) {
+        margin-left: 80px;
+    }
+}
